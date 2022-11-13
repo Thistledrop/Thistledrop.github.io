@@ -1,9 +1,9 @@
-<div align="center">
+
 
 # Sleek - Free Bootstrap Dashboard
 
 [![GitHub stars](https://img.shields.io/github/stars/themefisher/sleek.svg?color="brightgreen"&style=flat-square)](https://github.com/themefisher/sleek/stargazers)
-[![GitHub forks](https://img.shields.io/github/forks/themefisher/sleek.svg?color="failure"&style=flat-square)](https://github.com/themefisher/sleek/network)
+[![GitHub forks](https://img.shields.io/github/forks/themefisher/sleek.svg?color="success"&style=flat-square)](https://github.com/themefisher/sleek/network)
 [![GitHub issues closed](https://img.shields.io/github/issues-closed-raw/themefisher/sleek.svg?color="orange"&style=flat-square)]()
 <a href="https://coveralls.io/github/chartjs/Chart.js?branch=master"><img src="https://img.shields.io/coveralls/chartjs/Chart.js.svg?&style=flat-square&maxAge=600" alt="Coverage"></a>
 <a href="https://github.com/chartjs/awesome"><img src="https://awesome.re/badge-flat2.svg?&style=flat-square" alt="Awesome"></a>
