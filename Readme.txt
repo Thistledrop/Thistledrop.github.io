@@ -1,6 +1,5 @@
-Thanks for downloading this template!
+Work In Progress...
 
-Template Name: iPortfolio
-Template URL: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/
-Author: BootstrapMade.com
-License: https://bootstrapmade.com/license/
+Images by
+Circuit bg Photo by Alexandre Debiève
+  

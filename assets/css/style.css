@@ -6,10 +6,45 @@
 */
 
 /*--------------------------------------------------------------
+# Constants
+--------------------------------------------------------------*/
+:root {
+    --blue: #007bff;
+    --indigo: #6610f2;
+    --purple: #896def;
+    --pink: #ff548e;
+    --red: #dc3545;
+    --orange: #fd7e14;
+    --yellow: #ffc107;
+    --green: #28a745;
+    --teal: #20c997;
+    --cyan: #17a2b8;
+    --white: #ffffff;
+    --gray: #6c757d;
+    --gray-dark: #343a40;
+    --primary: #4c84ff;
+    --secondary: #8a909d;
+    --success: #29cc97;
+    --info: #13cae1;
+    --warning: #fec400;
+    --danger: #fe5461;
+    --light: #f5f6fa;
+    --dark: #1b223c;
+    --breakpoint-xs: 0;
+    --breakpoint-sm: 576px;
+    --breakpoint-md: 768px;
+    --breakpoint-lg: 992px;
+    --breakpoint-xl: 1200px;
+    --breakpoint-xxl: 1500px;
+    --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
+
+/*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
 body {
-  font-family: "Open Sans", sans-serif;
+  font-family: monospace;
   color: #272829;
 }
 
@@ -29,7 +64,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Raleway", sans-serif;
+  font-family: monospace
 }
 
 /*--------------------------------------------------------------
@@ -96,7 +131,7 @@ h6 {
   font-weight: 600;
   -moz-text-align-last: center;
   text-align-last: center;
-  font-family: "Poppins", sans-serif;
+  font-family: monospace
 }
 
 #header .profile h1 a,
@@ -228,7 +263,7 @@ h6 {
 #hero {
   width: 100%;
   height: 100vh;
-  background: url("../img/hero-bg.jpg") top center;
+  background: url("../img/circuit-bg.jpg") top center;
   background-size: cover;
 }
 
@@ -261,7 +296,7 @@ h6 {
   color: #fff;
   margin-bottom: 50px;
   font-size: 26px;
-  font-family: "Poppins", sans-serif;
+  font-family: monospace;
 }
 
 #hero p span {
