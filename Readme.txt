@@ -1,5 +1,5 @@
 Work In Progress...
 
-Images by
-Circuit bg Photo by Alexandre Debiève
+Image Credit
+Circuit-bg Photo by Alexandre Debiève
   

@@ -1,7 +1,12 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\assets",
+    "\\assets\\css",
+    "\\assets\\img",
+    "\\assets\\vendor",
+    "\\assets\\vendor\\bootstrap-icons"
   ],
-  "SelectedNode": "\\General.css",
+  "SelectedNode": "\\assets\\vendor\\bootstrap-icons\\bootstrap-icons.json",
   "PreviewInSolutionExplorer": false
 }
