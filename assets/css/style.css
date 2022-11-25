@@ -1073,6 +1073,12 @@ section {
   background: #f9f9f9;
 }
 
+.back {
+    float: left;
+    padding-left: 20px;
+    font-size: 26px;
+}
+
 .breadcrumbs h2 {
   font-size: 26px;
   font-weight: 300;

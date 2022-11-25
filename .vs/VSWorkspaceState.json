@@ -2,11 +2,10 @@
   "ExpandedNodes": [
     "",
     "\\assets",
-    "\\assets\\css",
-    "\\assets\\img",
     "\\assets\\vendor",
-    "\\assets\\vendor\\bootstrap-icons"
+    "\\assets\\vendor\\bootstrap-icons",
+    "\\forms"
   ],
-  "SelectedNode": "\\assets\\vendor\\bootstrap-icons\\bootstrap-icons.json",
+  "SelectedNode": "\\assets\\vendor\\bootstrap-icons\\index.html",
   "PreviewInSolutionExplorer": false
 }
