@@ -9,27 +9,17 @@
 # Constants
 --------------------------------------------------------------*/
 :root {
-    --blue: #007bff;
-    --indigo: #6610f2;
-    --purple: #896def;
-    --pink: #ff548e;
-    --red: #dc3545;
-    --orange: #fd7e14;
-    --yellow: #ffc107;
-    --green: #28a745;
-    --teal: #20c997;
-    --cyan: #17a2b8;
-    --white: #ffffff;
-    --gray: #6c757d;
-    --gray-dark: #343a40;
-    --primary: #4c84ff;
-    --secondary: #8a909d;
-    --success: #29cc97;
-    --info: #13cae1;
-    --warning: #fec400;
-    --danger: #fe5461;
-    --light: #f5f6fa;
-    --dark: #1b223c;
+    --Xiketic: #04020d;
+    --DarkPurple: #17132E;
+    --RussianViolet: #241651;
+    --PlumpPurple: #4D46A3;
+    --Glaucous: #6B86CD;
+    --GlaucousLight: rgba(107, 134, 205, 0.7);
+    --Aquamarine: #08E3BF;
+    --MintCream: #F1FEFA;
+    --Manatee: #A1A3B5;
+    --Rhythm: #656880;
+
     --breakpoint-xs: 0;
     --breakpoint-sm: 576px;
     --breakpoint-md: 768px;
@@ -44,8 +34,8 @@
 # General
 --------------------------------------------------------------*/
 body {
-  font-family: monospace;
-  color: #272829;
+    font-family: monospace;
+    color: #272829;
 }
 
 a {
@@ -64,35 +54,40 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: monospace
+    font-family: monospace;
+    color: whitesmoke;
+}
+
+p, i, strong {
+    color: whitesmoke;
 }
 
 /*--------------------------------------------------------------
 # Back to top button
 --------------------------------------------------------------*/
 .back-to-top {
-  position: fixed;
-  visibility: hidden;
-  opacity: 0;
-  right: 15px;
-  bottom: 15px;
-  z-index: 996;
-  background: #149ddd;
-  width: 40px;
-  height: 40px;
-  border-radius: 50px;
-  transition: all 0.4s;
+    position: fixed;
+    visibility: hidden;
+    opacity: 0;
+    right: 15px;
+    bottom: 15px;
+    z-index: 996;
+    background: var(--PlumpPurple);
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+    transition: all 0.4s;
 }
 
 .back-to-top i {
-  font-size: 28px;
-  color: #fff;
-  line-height: 0;
+    font-size: 28px;
+    color: var(--MintCream);
+    line-height: 0;
 }
 
 .back-to-top:hover {
-  background: #2eafec;
-  color: #fff;
+    background: var(--Aquamarine);
+    color: var(--MintCream);
 }
 
 .back-to-top.active {
@@ -104,61 +99,61 @@ h6 {
 # Header
 --------------------------------------------------------------*/
 #header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  width: 300px;
-  transition: all ease-in-out 0.5s;
-  z-index: 9997;
-  transition: all 0.5s;
-  padding: 0 15px;
-  background: #040b14;
-  overflow-y: auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 300px;
+    transition: all ease-in-out 0.5s;
+    z-index: 9997;
+    transition: all 0.5s;
+    padding: 0 15px;
+    background: var(--Xiketic);
+    overflow-y: auto;
 }
 
 #header .profile img {
-  margin: 15px auto;
-  display: block;
-  width: 120px;
-  border: 8px solid #2c2f3f;
+    margin: 15px auto;
+    display: block;
+    width: 120px;
+    border: 8px solid var(--DarkPurple);
 }
 
 #header .profile h1 {
-  font-size: 24px;
-  margin: 0;
-  padding: 0;
-  font-weight: 600;
-  -moz-text-align-last: center;
-  text-align-last: center;
-  font-family: monospace
+    font-size: 24px;
+    margin: 0;
+    padding: 0;
+    font-weight: 600;
+    -moz-text-align-last: center;
+    text-align-last: center;
+    font-family: monospace
 }
 
 #header .profile h1 a,
 #header .profile h1 a:hover {
-  color: #fff;
-  text-decoration: none;
+    color: var(--MintCream);
+    text-decoration: none;
 }
 
 #header .profile .social-links a {
-  font-size: 18px;
-  display: inline-block;
-  background: #212431;
-  color: #fff;
-  line-height: 1;
-  padding: 8px 0;
-  margin-right: 4px;
-  border-radius: 50%;
-  text-align: center;
-  width: 36px;
-  height: 36px;
-  transition: 0.3s;
+    font-size: 18px;
+    display: inline-block;
+    background: var(--PlumpPurple);
+    color: var(--MintCream);
+    line-height: 1;
+    padding: 8px 0;
+    margin-right: 4px;
+    border-radius: 50%;
+    text-align: center;
+    width: 36px;
+    height: 36px;
+    transition: 0.3s;
 }
 
 #header .profile .social-links a:hover {
-  background: #149ddd;
-  color: #fff;
-  text-decoration: none;
+    background: var(--Aquamarine);
+    color: var(--MintCream);
+    text-decoration: none;
 }
 
 #main {
@@ -198,7 +193,7 @@ h6 {
 .nav-menu a:focus {
   display: flex;
   align-items: center;
-  color: #a8a9b4;
+  color: var(--Manatee);
   padding: 12px 15px;
   margin-bottom: 8px;
   transition: 0.3s;
@@ -209,7 +204,7 @@ h6 {
 .nav-menu a:focus i {
   font-size: 24px;
   padding-right: 8px;
-  color: #6f7180;
+  color: var(--Rhythm);
 }
 
 .nav-menu a:hover,
@@ -217,14 +212,14 @@ h6 {
 .nav-menu .active:focus,
 .nav-menu li:hover>a {
   text-decoration: none;
-  color: #fff;
+  color: var(--MintCream);
 }
 
 .nav-menu a:hover i,
 .nav-menu .active i,
 .nav-menu .active:focus i,
 .nav-menu li:hover>a i {
-  color: #149ddd;
+  color: var(--PlumpPurple);
 }
 
 /* Mobile Navigation */
@@ -237,8 +232,8 @@ h6 {
   font-size: 24px;
   transition: all 0.4s;
   outline: none !important;
-  background-color: #149ddd;
-  color: #fff;
+  background-color: var(--PlumpPurple);
+  color: var(--MintCream);
   width: 40px;
   height: 40px;
   display: inline-flex;
@@ -269,7 +264,8 @@ h6 {
 
 #hero:before {
   content: "";
-  background: rgba(5, 13, 24, 0.3);
+  background: var(--PlumpPurple);
+  opacity: 0.4;
   position: absolute;
   bottom: 0;
   top: 0;
@@ -289,21 +285,21 @@ h6 {
   font-size: 64px;
   font-weight: 700;
   line-height: 56px;
-  color: #fff;
+  color: var(--MintCream);
 }
 
 #hero p {
-  color: #fff;
+  color: var(--MintCream);
   margin-bottom: 50px;
   font-size: 26px;
   font-family: monospace;
 }
 
 #hero p span {
-  color: #fff;
+  color: var(--MintCream);
   padding-bottom: 4px;
   letter-spacing: 1px;
-  border-bottom: 3px solid #149ddd;
+  border-bottom: 3px solid var(--Glaucous);
 }
 
 @media (min-width: 1024px) {
@@ -334,7 +330,7 @@ section {
 }
 
 .section-bg {
-  background: #f5f8fd;
+  background: var(--DarkPurple);
 }
 
 .section-title {
@@ -347,7 +343,7 @@ section {
   margin-bottom: 20px;
   padding-bottom: 20px;
   position: relative;
-  color: #173b6c;
+  color: var(--Aquamarine);
 }
 
 .section-title h4 {
@@ -355,7 +351,7 @@ section {
     margin-bottom: 10px;
     padding-bottom: 10px;
     position: relative;
-    color: #173b6c;
+    color: var(--Aquamarine);
 }
 
 .section-title h2::after {
@@ -364,27 +360,32 @@ section {
   display: block;
   width: 50px;
   height: 3px;
-  background: #149ddd;
+  background: var(--Glaucous);
   bottom: 0;
   left: 0;
 }
 
 .section-title p {
   margin-bottom: 0;
+  color: var(--MintCream);
 }
 
 /*--------------------------------------------------------------
 # About
 --------------------------------------------------------------*/
+.about {
+    background: var(--DarkPurple);
+}
+
 .about .content h3 {
   font-weight: 700;
   font-size: 26px;
-  color: #173b6c;
 }
 
 .about .content ul {
   list-style: none;
   padding: 0;
+  color: var(--MintCream);
 }
 
 .about .content ul li {
@@ -395,12 +396,13 @@ section {
 
 .about .content ul strong {
   margin-right: 10px;
+  color: var(--Glaucous);
 }
 
 .about .content ul i {
   font-size: 16px;
   margin-right: 5px;
-  color: #149ddd;
+  color: var(--Aquamarine);
   line-height: 0;
 }
 
@@ -413,6 +415,7 @@ section {
 --------------------------------------------------------------*/
 .facts {
   padding-bottom: 30px;
+  background: var(--Xiketic);
 }
 
 .facts .count-box {
@@ -423,7 +426,7 @@ section {
 .facts .count-box i {
   display: block;
   font-size: 44px;
-  color: #149ddd;
+  color: var(--Aquamarine);
   float: left;
   line-height: 0;
 }
@@ -433,7 +436,7 @@ section {
   line-height: 40px;
   display: block;
   font-weight: 700;
-  color: #050d18;
+  color: var(--Glaucous);
   margin-left: 60px;
 }
 
@@ -442,7 +445,7 @@ section {
   margin: 0 0 0 60px;
   font-family: "Raleway", sans-serif;
   font-size: 14px;
-  color: #122f57;
+  color: var(--Manatee);
 }
 
 .facts .count-box a {
@@ -460,7 +463,7 @@ section {
 }
 
 /*--------------------------------------------------------------
-# Akills
+# Skills
 --------------------------------------------------------------*/
 .skills .progress {
   height: 60px;
@@ -476,7 +479,7 @@ section {
   display: block;
   font-weight: 600;
   font-family: "Poppins", sans-serif;
-  color: #050d18;
+  color: var(--MintCream);
 }
 
 .skills .progress .skill .val {
@@ -485,32 +488,38 @@ section {
 }
 
 .skills .progress-bar-wrap {
-  background: #dce8f8;
+  background: var(--Manatee);
+  border-radius: 5px;
   height: 10px;
 }
 
 .skills .progress-bar {
   width: 1px;
+  border-radius: 5px;
   height: 10px;
   transition: 0.9s;
-  background-color: #149ddd;
+  background-color: var(--PlumpPurple);
 }
 
 /*--------------------------------------------------------------
 # Resume
 --------------------------------------------------------------*/
+.resume {
+    background: var(--Xiketic);
+}
+
 .resume .resume-title {
   font-size: 26px;
   font-weight: 700;
   margin-top: 20px;
-  margin-bottom: 20px;
-  color: #050d18;
+  margin-bottom: 10px;
+  color: var(--PlumpPurple);
 }
 
 .resume .resume-item {
   padding: 0 0 20px 20px;
   margin-top: -2px;
-  border-left: 2px solid #1f5297;
+  border-left: 2px solid var(--RussianViolet);
   position: relative;
 }
 
@@ -520,13 +529,13 @@ section {
   font-weight: 600;
   text-transform: uppercase;
   font-family: "Poppins", sans-serif;
-  color: #050d18;
+  color: var(--Glaucous);
   margin-bottom: 10px;
 }
 
 .resume .resume-item h5 {
   font-size: 16px;
-  background: #e4edf9;
+  color: var(--MintCream);
   padding: 5px 15px;
   display: inline-block;
   font-weight: 600;
@@ -535,6 +544,7 @@ section {
 
 .resume .resume-item ul {
   padding-left: 20px;
+  color: var(--MintCream)
 }
 
 .resume .resume-item ul li {
@@ -553,8 +563,8 @@ section {
   border-radius: 50px;
   left: -9px;
   top: 0;
-  background: #fff;
-  border: 2px solid #1f5297;
+  background: var(--MintCream);
+  border: 2px solid var(--PlumpPurple);
 }
 
 /*--------------------------------------------------------------
@@ -569,7 +579,7 @@ section {
   margin: 0 auto 35px auto;
   list-style: none;
   text-align: center;
-  background: #fff;
+  background: var(--Glaucous);
   border-radius: 50px;
   padding: 2px 15px;
 }
@@ -582,14 +592,14 @@ section {
   font-weight: 600;
   line-height: 1;
   text-transform: uppercase;
-  color: #272829;
+  color: var(--MintCream);
   margin-bottom: 5px;
   transition: all 0.3s ease-in-out;
 }
 
 .portfolio #portfolio-flters li:hover,
 .portfolio #portfolio-flters li.filter-active {
-  color: #149ddd;
+  color: var(--DarkPurple);
 }
 
 .portfolio #portfolio-flters li:last-child {
@@ -599,8 +609,23 @@ section {
 .portfolio .portfolio-wrap {
   transition: 0.3s;
   position: relative;
+  text-align: left;
+  color: var(--PlumpPurple);
+  opacity: 0.8;
   overflow: hidden;
   z-index: 1;
+}
+
+.portfolio .portfolio-wrap .project-text {
+    font-size: 20px;
+    background-color: var(--GlaucousLight);
+    color: var(--MintCream);
+    padding: 4px 8px;
+    text-align: left;
+    border-radius: 5px;
+    position: absolute;
+    top: 3px;
+    left: 6px;
 }
 
 .portfolio .portfolio-wrap::before {
@@ -629,20 +654,20 @@ section {
 }
 
 .portfolio .portfolio-wrap .portfolio-links a {
-  color: #fff;
+  color: var(--MintCream);
   font-size: 28px;
   text-align: center;
-  background: rgba(20, 157, 221, 0.75);
+  background: var(--GlaucousLight);
   transition: 0.3s;
   width: 50%;
 }
 
 .portfolio .portfolio-wrap .portfolio-links a:hover {
-  background: rgba(20, 157, 221, 0.95);
+  background: var(--GlaucousLight);
 }
 
 .portfolio .portfolio-wrap .portfolio-links a+a {
-  border-left: 1px solid #37b3ed;
+  border-left: 1px solid var(--Glaucous);
 }
 
 .portfolio .portfolio-wrap:hover::before {
@@ -663,6 +688,7 @@ section {
 --------------------------------------------------------------*/
 .portfolio-details {
   padding-top: 40px;
+  background: var(--DarkPurple);
 }
 
 .portfolio-details .portfolio-details-slider img {
@@ -677,18 +703,17 @@ section {
 .portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet {
   width: 12px;
   height: 12px;
-  background-color: #fff;
   opacity: 1;
-  border: 1px solid #149ddd;
+  border: 1px solid var(--PlumpPurple);
 }
 
 .portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: #149ddd;
+  background-color: var(--PlumpPurple);
 }
 
 .portfolio-details .portfolio-info {
   padding: 30px;
-  box-shadow: 0px 0 30px rgba(5, 13, 24, 0.08);
+  background: var(--RussianViolet);
 }
 
 .portfolio-details .portfolio-info h3 {
@@ -696,13 +721,14 @@ section {
   font-weight: 700;
   margin-bottom: 20px;
   padding-bottom: 20px;
-  border-bottom: 1px solid #eee;
+  border-bottom: 1px solid var(--MintCream);
 }
 
 .portfolio-details .portfolio-info ul {
   list-style: none;
   padding: 0;
   font-size: 15px;
+  color: var(--MintCream);
 }
 
 .portfolio-details .portfolio-info ul li+li {
@@ -722,6 +748,43 @@ section {
 .portfolio-details .portfolio-description p {
   padding: 0;
 }
+
+.portfolio-details .progress {
+    height: 40px;
+    display: block;
+    background: none;
+    border-radius: 0;
+}
+
+.portfolio-details .progress .skill {
+    padding: 0 0 0 50px;
+    margin: 0 0 0 0;
+    text-transform: uppercase;
+    display: block;
+    font-weight: 600;
+    font-family: "Poppins", sans-serif;
+    color:var(--MintCream);
+}
+
+.portfolio-details .progress .skill .val {
+    float: right;
+    font-style: normal;
+}
+
+.portfolio-details .progress-bar-wrap {
+    background: var(--Manatee);
+    height: 10px;
+    border-radius: 5px;
+}
+
+.portfolio-details .progress-bar {
+    width: 1px;
+    height: 10px;
+    transition: 0.9s;
+    background-color: var(--Glaucous);
+    border-radius: 5px;
+}
+
 
 /*--------------------------------------------------------------
 # Services
@@ -875,22 +938,22 @@ section {
 --------------------------------------------------------------*/
 .contact {
   padding-bottom: 130px;
+  background: var(--Xiketic);
 }
 
 .contact .info {
   padding: 30px;
-  background: #fff;
+  background: var(--DarkPurple);
   width: 100%;
-  box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12);
 }
 
 .contact .info i {
   font-size: 20px;
-  color: #149ddd;
+  color: var(--Aquamarine);
   float: left;
   width: 44px;
   height: 44px;
-  background: #dff3fc;
+  background: var(--RussianViolet);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -903,14 +966,14 @@ section {
   font-size: 22px;
   font-weight: 600;
   margin-bottom: 5px;
-  color: #050d18;
+  color: var(--Aquamarine);
 }
 
 .contact .info p {
   padding: 0 0 10px 60px;
   margin-bottom: 20px;
   font-size: 14px;
-  color: #173b6c;
+  color: var(--MintCream);
 }
 
 .contact .info .email p {
@@ -922,18 +985,18 @@ section {
 }
 
 .contact .info .social-links a {
-  font-size: 18px;
-  display: inline-block;
-  background: #333;
-  color: #fff;
-  line-height: 1;
-  padding: 8px 0;
-  border-radius: 50%;
-  text-align: center;
-  width: 36px;
-  height: 36px;
-  transition: 0.3s;
-  margin-right: 10px;
+    font-size: 18px;
+    display: inline-block;
+    background: var(--MintCream);
+    color: var(--MintCream);
+    line-height: 1;
+    padding: 8px 0;
+    border-radius: 50%;
+    text-align: center;
+    width: 36px;
+    height: 36px;
+    transition: 0.3s;
+    margin-right: 10px;
 }
 
 .contact .info .social-links a:hover {
@@ -944,15 +1007,14 @@ section {
 .contact .info .email:hover i,
 .contact .info .address:hover i,
 .contact .info .phone:hover i {
-  background: #149ddd;
-  color: #fff;
+  background: var(--PlumpPurple);
+  color: var(--Aquamarine);
 }
 
 .contact .php-email-form {
   width: 100%;
   padding: 30px;
-  background: #fff;
-  box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12);
+  background: var(--DarkPurple);
 }
 
 .contact .php-email-form .form-group {
@@ -1070,7 +1132,7 @@ section {
 --------------------------------------------------------------*/
 .breadcrumbs {
   padding: 20px 0;
-  background: #f9f9f9;
+  background: var(--Xiketic);
 }
 
 .back {
@@ -1095,12 +1157,14 @@ section {
 
 .breadcrumbs ol li+li {
   padding-left: 10px;
+  
+  color: var(--MintCream);
 }
 
 .breadcrumbs ol li+li::before {
   display: inline-block;
   padding-right: 10px;
-  color: #0e2442;
+  color: var(--MintCream);
   content: "/";
 }
 
