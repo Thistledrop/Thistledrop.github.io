@@ -2,11 +2,10 @@
   "ExpandedNodes": [
     "",
     "\\assets",
+    "\\assets\\css",
     "\\assets\\img",
-    "\\assets\\img\\portfolio",
-    "\\assets\\vendor\\bootstrap-icons",
     "\\forms"
   ],
-  "SelectedNode": "\\portfolio-details.html",
+  "SelectedNode": "\\assets\\img\\holding-hands.jpg",
   "PreviewInSolutionExplorer": false
 }

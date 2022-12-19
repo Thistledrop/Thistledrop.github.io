@@ -9,17 +9,15 @@
 # Constants
 --------------------------------------------------------------*/
 :root {
-    --Xiketic: #04020d;
-    --DarkPurple: #17132E;
-    --RussianViolet: #241651;
-    --PlumpPurple: #4D46A3;
-    --Glaucous: #6B86CD;
-    --GlaucousLight: rgba(107, 134, 205, 0.7);
-    --Aquamarine: #08E3BF;
-    --MintCream: #F1FEFA;
-    --Manatee: #A1A3B5;
-    --Rhythm: #656880;
-
+    --BlackCoco: #1C1814;
+    --Bistro: #33281E;
+    --CafeNoire: #46301D;
+    --VanDykeBrown: #58371C;
+    --Coffee: #69513E;
+    --Golden: #96621C;
+    --PersianOrange: #d79257;
+    --PaleSilver: #c0b5af;
+    --Linen: #fff1e6;
     --breakpoint-xs: 0;
     --breakpoint-sm: 576px;
     --breakpoint-md: 768px;
@@ -35,16 +33,15 @@
 --------------------------------------------------------------*/
 body {
     font-family: monospace;
-    color: #272829;
 }
 
 a {
-  color: #149ddd;
+  color: var(--PaleSilver);
   text-decoration: none;
 }
 
 a:hover {
-  color: #37b3ed;
+  color: var(--PersianOrange);
   text-decoration: none;
 }
 
@@ -55,11 +52,11 @@ h4,
 h5,
 h6 {
     font-family: monospace;
-    color: whitesmoke;
+    color: var(--Linen);
 }
 
 p, i, strong {
-    color: whitesmoke;
+    color: var(--Linen);
 }
 
 /*--------------------------------------------------------------
@@ -72,7 +69,7 @@ p, i, strong {
     right: 15px;
     bottom: 15px;
     z-index: 996;
-    background: var(--PlumpPurple);
+    background: var(--BlackCoco);
     width: 40px;
     height: 40px;
     border-radius: 50px;
@@ -81,13 +78,13 @@ p, i, strong {
 
 .back-to-top i {
     font-size: 28px;
-    color: var(--MintCream);
+    color: var(--Linen);
     line-height: 0;
 }
 
 .back-to-top:hover {
-    background: var(--Aquamarine);
-    color: var(--MintCream);
+    background: var(--Golden);
+    color: var(--Linen);
 }
 
 .back-to-top.active {
@@ -108,7 +105,7 @@ p, i, strong {
     z-index: 9997;
     transition: all 0.5s;
     padding: 0 15px;
-    background: var(--Xiketic);
+    background: var(--BlackCoco);
     overflow-y: auto;
 }
 
@@ -116,7 +113,7 @@ p, i, strong {
     margin: 15px auto;
     display: block;
     width: 120px;
-    border: 8px solid var(--DarkPurple);
+    border: 8px solid var(--Bistro);
 }
 
 #header .profile h1 {
@@ -131,15 +128,15 @@ p, i, strong {
 
 #header .profile h1 a,
 #header .profile h1 a:hover {
-    color: var(--MintCream);
+    color: var(--Golden);
     text-decoration: none;
 }
 
 #header .profile .social-links a {
     font-size: 18px;
     display: inline-block;
-    background: var(--PlumpPurple);
-    color: var(--MintCream);
+    background: var(--Golden);
+    color: var(--Linen);
     line-height: 1;
     padding: 8px 0;
     margin-right: 4px;
@@ -151,8 +148,8 @@ p, i, strong {
 }
 
 #header .profile .social-links a:hover {
-    background: var(--Aquamarine);
-    color: var(--MintCream);
+    background: var(--PersianOrange);
+    color: var(--Linen);
     text-decoration: none;
 }
 
@@ -193,7 +190,7 @@ p, i, strong {
 .nav-menu a:focus {
   display: flex;
   align-items: center;
-  color: var(--Manatee);
+  color: var(--Linen);
   padding: 12px 15px;
   margin-bottom: 8px;
   transition: 0.3s;
@@ -204,7 +201,7 @@ p, i, strong {
 .nav-menu a:focus i {
   font-size: 24px;
   padding-right: 8px;
-  color: var(--Rhythm);
+  color: var(--PaleSilver);
 }
 
 .nav-menu a:hover,
@@ -212,36 +209,36 @@ p, i, strong {
 .nav-menu .active:focus,
 .nav-menu li:hover>a {
   text-decoration: none;
-  color: var(--MintCream);
+  color: var(--Linen);
 }
 
 .nav-menu a:hover i,
 .nav-menu .active i,
 .nav-menu .active:focus i,
 .nav-menu li:hover>a i {
-  color: var(--PlumpPurple);
+  color: var(--PersianOrange);
 }
 
 /* Mobile Navigation */
 .mobile-nav-toggle {
-  position: fixed;
-  right: 15px;
-  top: 15px;
-  z-index: 9998;
-  border: 0;
-  font-size: 24px;
-  transition: all 0.4s;
-  outline: none !important;
-  background-color: var(--PlumpPurple);
-  color: var(--MintCream);
-  width: 40px;
-  height: 40px;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  line-height: 0;
-  border-radius: 50px;
-  cursor: pointer;
+    position: fixed;
+    right: 15px;
+    top: 15px;
+    z-index: 9998;
+    border: 0;
+    font-size: 24px;
+    transition: all 0.4s;
+    outline: none !important;
+    background-color: var(--BlackCoco);
+    color: var(--Linen);
+    width: 40px;
+    height: 40px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 0;
+    border-radius: 50px;
+    cursor: pointer;
 }
 
 .mobile-nav-active {
@@ -264,8 +261,6 @@ p, i, strong {
 
 #hero:before {
   content: "";
-  background: var(--PlumpPurple);
-  opacity: 0.4;
   position: absolute;
   bottom: 0;
   top: 0;
@@ -285,21 +280,21 @@ p, i, strong {
   font-size: 64px;
   font-weight: 700;
   line-height: 56px;
-  color: var(--MintCream);
+  color: var(--Linen);
 }
 
 #hero p {
-  color: var(--MintCream);
+  color: var(--Linen);
   margin-bottom: 50px;
   font-size: 26px;
   font-family: monospace;
 }
 
 #hero p span {
-  color: var(--MintCream);
+  color: var(--Linen);
   padding-bottom: 4px;
   letter-spacing: 1px;
-  border-bottom: 3px solid var(--Glaucous);
+  border-bottom: 3px solid var(--Golden);
 }
 
 @media (min-width: 1024px) {
@@ -330,7 +325,7 @@ section {
 }
 
 .section-bg {
-  background: var(--DarkPurple);
+  background: var(--Coffee);
 }
 
 .section-title {
@@ -343,7 +338,7 @@ section {
   margin-bottom: 20px;
   padding-bottom: 20px;
   position: relative;
-  color: var(--Aquamarine);
+  color: var(--Linen);
 }
 
 .section-title h4 {
@@ -351,7 +346,7 @@ section {
     margin-bottom: 10px;
     padding-bottom: 10px;
     position: relative;
-    color: var(--Aquamarine);
+    color: var(--Golden);
 }
 
 .section-title h2::after {
@@ -360,21 +355,21 @@ section {
   display: block;
   width: 50px;
   height: 3px;
-  background: var(--Glaucous);
+  background: var(--Golden);
   bottom: 0;
   left: 0;
 }
 
 .section-title p {
   margin-bottom: 0;
-  color: var(--MintCream);
+  color: var(--Linen);
 }
 
 /*--------------------------------------------------------------
 # About
 --------------------------------------------------------------*/
 .about {
-    background: var(--DarkPurple);
+    background: var(--CafeNoire);
 }
 
 .about .content h3 {
@@ -385,7 +380,7 @@ section {
 .about .content ul {
   list-style: none;
   padding: 0;
-  color: var(--MintCream);
+  color: var(--PersianOrange);
 }
 
 .about .content ul li {
@@ -396,13 +391,13 @@ section {
 
 .about .content ul strong {
   margin-right: 10px;
-  color: var(--Glaucous);
+  color: var(--Linen);
 }
 
 .about .content ul i {
   font-size: 16px;
   margin-right: 5px;
-  color: var(--Aquamarine);
+  color: var(--Linen);
   line-height: 0;
 }
 
@@ -415,7 +410,7 @@ section {
 --------------------------------------------------------------*/
 .facts {
   padding-bottom: 30px;
-  background: var(--Xiketic);
+  background: var(--Bistro);
 }
 
 .facts .count-box {
@@ -426,7 +421,7 @@ section {
 .facts .count-box i {
   display: block;
   font-size: 44px;
-  color: var(--Aquamarine);
+  color: var(--Golden);
   float: left;
   line-height: 0;
 }
@@ -436,7 +431,7 @@ section {
   line-height: 40px;
   display: block;
   font-weight: 700;
-  color: var(--Glaucous);
+  color: var(--Linen);
   margin-left: 60px;
 }
 
@@ -445,7 +440,7 @@ section {
   margin: 0 0 0 60px;
   font-family: "Raleway", sans-serif;
   font-size: 14px;
-  color: var(--Manatee);
+  color: var(--Golden);
 }
 
 .facts .count-box a {
@@ -479,7 +474,7 @@ section {
   display: block;
   font-weight: 600;
   font-family: "Poppins", sans-serif;
-  color: var(--MintCream);
+  color: var(--Linen);
 }
 
 .skills .progress .skill .val {
@@ -488,7 +483,7 @@ section {
 }
 
 .skills .progress-bar-wrap {
-  background: var(--Manatee);
+  background: var(--PaleSilver);
   border-radius: 5px;
   height: 10px;
 }
@@ -498,14 +493,14 @@ section {
   border-radius: 5px;
   height: 10px;
   transition: 0.9s;
-  background-color: var(--PlumpPurple);
+  background-color: var(--PersianOrange);
 }
 
 /*--------------------------------------------------------------
 # Resume
 --------------------------------------------------------------*/
 .resume {
-    background: var(--Xiketic);
+    background: var(--VanDykeBrown);
 }
 
 .resume .resume-title {
@@ -513,13 +508,13 @@ section {
   font-weight: 700;
   margin-top: 20px;
   margin-bottom: 10px;
-  color: var(--PlumpPurple);
+  color: var(--Golden);
 }
 
 .resume .resume-item {
   padding: 0 0 20px 20px;
   margin-top: -2px;
-  border-left: 2px solid var(--RussianViolet);
+  border-left: 2px solid var(--BlackCoco);
   position: relative;
 }
 
@@ -529,13 +524,13 @@ section {
   font-weight: 600;
   text-transform: uppercase;
   font-family: "Poppins", sans-serif;
-  color: var(--Glaucous);
+  color: var(--PersianOrange);
   margin-bottom: 10px;
 }
 
 .resume .resume-item h5 {
   font-size: 16px;
-  color: var(--MintCream);
+  color: var(--Linen);
   padding: 5px 15px;
   display: inline-block;
   font-weight: 600;
@@ -544,7 +539,7 @@ section {
 
 .resume .resume-item ul {
   padding-left: 20px;
-  color: var(--MintCream)
+  color: var(--Linen)
 }
 
 .resume .resume-item ul li {
@@ -563,13 +558,17 @@ section {
   border-radius: 50px;
   left: -9px;
   top: 0;
-  background: var(--MintCream);
-  border: 2px solid var(--PlumpPurple);
+  background: var(--BlackCoco);
+  border: 2px solid var(--Golden);
 }
 
 /*--------------------------------------------------------------
 # Portfolio
 --------------------------------------------------------------*/
+.portfolio{
+    background: var(--Bistro);
+}
+
 .portfolio .portfolio-item {
   margin-bottom: 30px;
 }
@@ -579,7 +578,7 @@ section {
   margin: 0 auto 35px auto;
   list-style: none;
   text-align: center;
-  background: var(--Glaucous);
+  background: var(--CafeNoire);
   border-radius: 50px;
   padding: 2px 15px;
 }
@@ -592,14 +591,14 @@ section {
   font-weight: 600;
   line-height: 1;
   text-transform: uppercase;
-  color: var(--MintCream);
+  color: var(--Linen);
   margin-bottom: 5px;
   transition: all 0.3s ease-in-out;
 }
 
 .portfolio #portfolio-flters li:hover,
 .portfolio #portfolio-flters li.filter-active {
-  color: var(--DarkPurple);
+  color: var(--Golden);
 }
 
 .portfolio #portfolio-flters li:last-child {
@@ -610,7 +609,7 @@ section {
   transition: 0.3s;
   position: relative;
   text-align: left;
-  color: var(--PlumpPurple);
+  color: var(--Coffee);
   opacity: 0.8;
   overflow: hidden;
   z-index: 1;
@@ -618,8 +617,8 @@ section {
 
 .portfolio .portfolio-wrap .project-text {
     font-size: 20px;
-    background-color: var(--GlaucousLight);
-    color: var(--MintCream);
+    background-color: var(--Golden);
+    color: var(--Linen);
     padding: 4px 8px;
     text-align: left;
     border-radius: 5px;
@@ -654,20 +653,20 @@ section {
 }
 
 .portfolio .portfolio-wrap .portfolio-links a {
-  color: var(--MintCream);
+  color: var(--Linen);
   font-size: 28px;
   text-align: center;
-  background: var(--GlaucousLight);
+  background: var(--Golden);
   transition: 0.3s;
   width: 50%;
 }
 
 .portfolio .portfolio-wrap .portfolio-links a:hover {
-  background: var(--GlaucousLight);
+  background: var(--Coffee);
 }
 
 .portfolio .portfolio-wrap .portfolio-links a+a {
-  border-left: 1px solid var(--Glaucous);
+  border-left: 1px solid var(--Golden);
 }
 
 .portfolio .portfolio-wrap:hover::before {
@@ -938,22 +937,22 @@ section {
 --------------------------------------------------------------*/
 .contact {
   padding-bottom: 130px;
-  background: var(--Xiketic);
+  background: var(--CafeNoire);
 }
 
 .contact .info {
   padding: 30px;
-  background: var(--DarkPurple);
+  background: var(--Coffee);
   width: 100%;
 }
 
 .contact .info i {
   font-size: 20px;
-  color: var(--Aquamarine);
+  color: var(--Linen);
   float: left;
   width: 44px;
   height: 44px;
-  background: var(--RussianViolet);
+  background: var(--VanDykeBrown);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -966,14 +965,14 @@ section {
   font-size: 22px;
   font-weight: 600;
   margin-bottom: 5px;
-  color: var(--Aquamarine);
+  color: var(--Linen);
 }
 
 .contact .info p {
   padding: 0 0 10px 60px;
   margin-bottom: 20px;
   font-size: 14px;
-  color: var(--MintCream);
+  color: var(--Linen);
 }
 
 .contact .info .email p {
@@ -987,8 +986,8 @@ section {
 .contact .info .social-links a {
     font-size: 18px;
     display: inline-block;
-    background: var(--MintCream);
-    color: var(--MintCream);
+    background: var(--Linen);
+    color: var(--Linen);
     line-height: 1;
     padding: 8px 0;
     border-radius: 50%;
@@ -1007,8 +1006,8 @@ section {
 .contact .info .email:hover i,
 .contact .info .address:hover i,
 .contact .info .phone:hover i {
-  background: var(--PlumpPurple);
-  color: var(--Aquamarine);
+  background: var(--Golden);
+  color: var(--Linen);
 }
 
 .contact .php-email-form {
