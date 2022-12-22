@@ -59,6 +59,11 @@ p, i, strong {
     color: var(--Linen);
 }
 
+.portfolio-desc p, .portfolio-desc i {
+    font-family: monospace;
+    color: var(--VanDykeBrown);
+}
+
 /*--------------------------------------------------------------
 # Back to top button
 --------------------------------------------------------------*/
@@ -565,7 +570,7 @@ section {
 /*--------------------------------------------------------------
 # Portfolio
 --------------------------------------------------------------*/
-.portfolio{
+.portfolio {
     background: var(--Bistro);
 }
 
@@ -658,7 +663,7 @@ section {
   text-align: center;
   background: var(--Golden);
   transition: 0.3s;
-  width: 50%;
+  width: 100%;
 }
 
 .portfolio .portfolio-wrap .portfolio-links a:hover {
@@ -686,8 +691,8 @@ section {
 # Portfolio Details
 --------------------------------------------------------------*/
 .portfolio-details {
-  padding-top: 40px;
-  background: var(--DarkPurple);
+    padding-top: 40px;
+    background: var(--CafeNoire);
 }
 
 .portfolio-details .portfolio-details-slider img {
@@ -703,16 +708,16 @@ section {
   width: 12px;
   height: 12px;
   opacity: 1;
-  border: 1px solid var(--PlumpPurple);
+  border: 1px solid var(--BlackCoco);
 }
 
 .portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: var(--PlumpPurple);
+  background-color: var(--Golden);
 }
 
 .portfolio-details .portfolio-info {
   padding: 30px;
-  background: var(--RussianViolet);
+  background: var(--Coffee);
 }
 
 .portfolio-details .portfolio-info h3 {
@@ -720,14 +725,14 @@ section {
   font-weight: 700;
   margin-bottom: 20px;
   padding-bottom: 20px;
-  border-bottom: 1px solid var(--MintCream);
+  border-bottom: 1px solid var(--Linen);
 }
 
 .portfolio-details .portfolio-info ul {
   list-style: none;
   padding: 0;
   font-size: 15px;
-  color: var(--MintCream);
+  color: var(--Linen);
 }
 
 .portfolio-details .portfolio-info ul li+li {
@@ -762,7 +767,7 @@ section {
     display: block;
     font-weight: 600;
     font-family: "Poppins", sans-serif;
-    color:var(--MintCream);
+    color:var(--Linen);
 }
 
 .portfolio-details .progress .skill .val {
@@ -771,7 +776,7 @@ section {
 }
 
 .portfolio-details .progress-bar-wrap {
-    background: var(--Manatee);
+    background: var(--PaleSilver);
     height: 10px;
     border-radius: 5px;
 }
@@ -780,7 +785,7 @@ section {
     width: 1px;
     height: 10px;
     transition: 0.9s;
-    background-color: var(--Glaucous);
+    background-color: var(--Golden);
     border-radius: 5px;
 }
 
@@ -1131,7 +1136,7 @@ section {
 --------------------------------------------------------------*/
 .breadcrumbs {
   padding: 20px 0;
-  background: var(--Xiketic);
+  background: var(--Bistro);
 }
 
 .back {
@@ -1157,13 +1162,13 @@ section {
 .breadcrumbs ol li+li {
   padding-left: 10px;
   
-  color: var(--MintCream);
+  color: var(--Linen);
 }
 
 .breadcrumbs ol li+li::before {
   display: inline-block;
   padding-right: 10px;
-  color: var(--MintCream);
+  color: var(--Linen);
   content: "/";
 }
 
