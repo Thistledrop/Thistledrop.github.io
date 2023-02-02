@@ -2,10 +2,8 @@
   "ExpandedNodes": [
     "",
     "\\assets",
-    "\\assets\\img",
-    "\\assets\\vendor",
-    "\\forms"
+    "\\assets\\vendor"
   ],
-  "SelectedNode": "\\assets\\vendor\\glightbox",
+  "SelectedNode": "\\index.html",
   "PreviewInSolutionExplorer": false
 }
