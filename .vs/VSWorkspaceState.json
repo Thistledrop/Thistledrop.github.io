@@ -2,8 +2,9 @@
   "ExpandedNodes": [
     "",
     "\\assets",
-    "\\assets\\vendor"
+    "\\assets\\img",
+    "\\assets\\img\\DungeonAI"
   ],
-  "SelectedNode": "\\index.html",
+  "SelectedNode": "\\assets\\img\\DungeonAI\\wizard.png",
   "PreviewInSolutionExplorer": false
 }
