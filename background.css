@@ -9,6 +9,7 @@ body {
 
 /*Subtle “CRT” overlay*/
 .CRT {
+    z-index: -2;
     position: fixed;
     inset: 0;
     pointer-events: none;
@@ -21,7 +22,7 @@ body {
 
 /*Colorful Nebula*/
 .mesh-bg {
-    z-index: 0;
+    z-index: -2;
     position: fixed;
     width: 100%;
     min-height: 100vh;
@@ -85,6 +86,7 @@ body {
 
 /*Subtle static*/
 .static {
+    z-index: -2;
     position: fixed;
     top: -50%;
     left: -50%;
