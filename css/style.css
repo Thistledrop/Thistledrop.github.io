@@ -36,7 +36,7 @@ a {
     padding: 56px 18px 72px;
 }
 
-/* Top navigation (optional but makes it look pro) */
+/* Top navigation*/
 .topbar {
     display: flex;
     justify-content: space-between;
