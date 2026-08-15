@@ -1,0 +1,210 @@
+body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial;
+    overflow-x: hidden;
+    position: relative;
+}
+
+/*Subtle “CRT” overlay*/
+.CRT {
+    z-index: -2;
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    background: 
+        linear-gradient(to right, rgba(0,240,255,0.10) 1px, transparent 1px) 0 0 / 16px 16px, 
+        linear-gradient(to bottom, rgba(255,43,214,0.08) 1px, transparent 1px) 0 0 / 16px 16px;
+    opacity: 0.22;
+    mix-blend-mode: screen;
+}
+
+/*Colorful Nebula*/
+.mesh-bg {
+    z-index: -2;
+    position: fixed;
+    width: 100%;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+    .mesh-bg::before {
+        content: '';
+        position: absolute;
+        inset: -30%;
+        background: 
+            radial-gradient(ellipse 60% 55% at 20% 20%, #1a1040 0%, transparent 100%), 
+            radial-gradient(ellipse 55% 50% at 80% 75%, #0f1f30 0%, transparent 100%), 
+            radial-gradient(ellipse 50% 60% at 75% 15%, #1a0e28 0%, transparent 100%), 
+            radial-gradient(ellipse 60% 45% at 25% 80%, #0d1e1a 0%, transparent 100%);
+        animation: ga-04-mesh 14s ease-in-out infinite alternate;
+        opacity: .3;
+    }
+
+    .mesh-bg::after {
+        content: '';
+        position: absolute;
+        inset: -30%;
+        background: 
+            radial-gradient(ellipse 45% 55% at 55% 50%, rgba(99,102,241,.06) 0%, transparent 65%), 
+            radial-gradient(ellipse 35% 45% at 30% 60%, rgba(16,185,129,.05) 0%, transparent 60%);
+        animation: ga-04-mesh2 calc(var(--dur) * 1.4) ease-in-out infinite alternate-reverse;
+    }
+
+@keyframes ga-04-mesh2 {
+    0% {
+        transform: translate(0, 0);
+    }
+
+    50% {
+        transform: translate(-6%, 5%);
+    }
+
+    100% {
+        transform: translate(4%, -4%);
+    }
+}
+
+@keyframes ga-04-mesh {
+    0% {
+        transform: translate(0, 0) rotate(0deg);
+    }
+
+    33% {
+        transform: translate(5%, 4%) rotate(3deg);
+    }
+
+    66% {
+        transform: translate(-4%, 6%) rotate(-2deg);
+    }
+
+    100% {
+        transform: translate(3%, -3%) rotate(1.5deg);
+    }
+}
+
+/*Subtle static*/
+.static {
+    z-index: -2;
+    position: fixed;
+    top: -50%;
+    left: -50%;
+    right: -50%;
+    bottom: -50%;
+    width: 200%;
+    height: 200vh;
+    background: transparent url('http://assets.iceable.com/img/noise-transparent.png') repeat 0 0;
+    background-repeat: repeat;
+    animation: staticAnimation .2s infinite;
+    opacity: .7;
+    mix-blend-mode: screen;
+    visibility: visible;
+}
+
+@keyframes staticAnimation {
+    0% {
+        transform: translate(0,0)
+    }
+
+    10% {
+        transform: translate(-5%,-5%)
+    }
+
+    20% {
+        transform: translate(-10%,5%)
+    }
+
+    30% {
+        transform: translate(5%,-10%)
+    }
+
+    40% {
+        transform: translate(-5%,15%)
+    }
+
+    50% {
+        transform: translate(-10%,5%)
+    }
+
+    60% {
+        transform: translate(15%,0)
+    }
+
+    70% {
+        transform: translate(0,10%)
+    }
+
+    80% {
+        transform: translate(-15%,0)
+    }
+
+    90% {
+        transform: translate(10%,5%)
+    }
+
+    100% {
+        transform: translate(5%,0)
+    }
+}
+
+/*Stars and Comets*/
+.star {
+    position: absolute;
+    background: var(--text);
+    border-radius: 50%;
+    opacity: 0.4;
+    animation: twinkle 2s infinite ease-in-out;
+}
+
+.comet {
+    position: absolute;
+    width: 3px;
+    height: 3px;
+    background: white;
+    border-radius: 50%;
+    filter: blur(0.5px);
+    animation: cometMove 2.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+    .comet::after {
+        content: "";
+        position: absolute;
+        top: 50%;
+        right: 0;
+        width: 40px;
+        height: 2px;
+        background: linear-gradient(to left, white, transparent);
+        transform: translateY(-50%);
+        filter: blur(0.5px);
+    }
+
+@keyframes twinkle {
+    0%, 100% {
+        opacity: 0.4;
+    }
+
+    50% {
+        opacity: 0.1;
+    }
+}
+
+@keyframes cometMove {
+    0% {
+        opacity: 0;
+        transform: translate(-100%, -100%) rotate(45deg) scale(0.5);
+    }
+
+    10% {
+        opacity: 1;
+    }
+
+    90% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+        transform: translate(100vw, 100vh) rotate(45deg) scale(0.5);
+    }
+}
