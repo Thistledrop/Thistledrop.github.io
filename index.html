@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Your Name — Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div class="spaceBg" aria-hidden="true">
+        <!--<div class="nebula"></div>-->
+        <div class="stars"></div>
+    </div>
+    <div class="container">
+        <div class="topbar">
+            <div class="brand">
+                <span class="mark" aria-hidden="true"></span>
+                <span>Your Name</span>
+            </div>
+
+            <nav class="nav" aria-label="Primary">
+                <a href="#projects">Projects</a>
+                <a href="#about">About</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </div>
+
+        <section class="hero">
+            <div class="card">
+                <h1>Neon-built interfaces, arcade-level polish.</h1>
+                <p class="role">
+                    I’m a software developer focused on building fast, accessible, and clean web experiences.
+                    Think “retro energy” with “modern engineering.”
+                </p>
+
+                <div class="pills">
+                    <div class="pill limeGlow">Frontend</div>
+                    <div class="pill cyanGlow">UI/UX</div>
+                    <div class="pill magentaGlow">Performance</div>
+                </div>
+
+                <div class="ctaRow">
+                    <a class="btn btnPrimary" href="#projects">▶ View Projects</a>
+                    <a class="btn btnGhost" href="#contact">Contact</a>
+                </div>
+            </div>
+
+            <div class="card" id="about">
+                <div class="sectionTitle">About</div>
+                <p style="margin:0; color: var(--muted); line-height:1.6;">
+                    Share 2–4 sentences about what you build, your favorite tech, and what kind of projects you
+                    enjoy most.
+                </p>
+                <div class="meta" style="margin-top:16px;">
+                    <span class="tag limeGlow">TypeScript</span>
+                    <span class="tag cyanGlow">React</span>
+                    <span class="tag magentaGlow">CSS</span>
+                </div>
+            </div>
+        </section>
+
+        <section style="margin-top:18px;" id="projects">
+            <div class="card">
+                <div class="sectionTitle">Projects</div>
+
+                <div class="grid">
+                    <article class="project">
+                        <h3>Project One</h3>
+                        <p>What it does + your role. Keep it concrete (1–2 sentences).</p>
+                        <div class="meta">
+                            <span class="tag">React</span>
+                            <span class="tag">API</span>
+                        </div>
+                    </article>
+
+                    <article class="project">
+                        <h3>Project Two</h3>
+                        <p>A result-focused description: speed, UX win, or measurable impact.</p>
+                        <div class="meta">
+                            <span class="tag">Node</span>
+                            <span class="tag">Design</span>
+                        </div>
+                    </article>
+
+                    <article class="project">
+                        <h3>Project Three</h3>
+                        <p>Challenge you solved + what you learned / improved.</p>
+                        <div class="meta">
+                            <span class="tag">CSS</span>
+                            <span class="tag">Testing</span>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section style="margin-top:18px;" id="contact">
+            <div class="card">
+                <div class="sectionTitle">Contact</div>
+                <p style="margin:0; color: var(--muted); line-height:1.6;">
+                    Email: you@example.com &nbsp;•&nbsp; GitHub: github.com/yourname &nbsp;•&nbsp; LinkedIn: linkedin.com/in/yourname
+                </p>
+            </div>
+
+            <div class="footer">
+                © Your Name — built with neon energy.
+            </div>
+        </section>
+    </div>
+</body>
+</html>
