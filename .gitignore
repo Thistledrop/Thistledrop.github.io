@@ -2,6 +2,10 @@
 # This .gitignore file was automatically created by Microsoft(R) Visual Studio.
 ################################################################################
 
+/.vs/Thistledrop.github.io.slnx
+/.vs/Thistledrop.github.io
+/.vs/ProjectSettings.json
+/.vs
 /.vs/Portfolio.slnx/config/applicationhost.config
 /.vs/Portfolio.slnx/FileContentIndex
 /.vs/Portfolio.slnx/v18
