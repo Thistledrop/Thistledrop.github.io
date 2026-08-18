@@ -1,8 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@400&family=Roboto+Condensed:wght@700&display=swap');
-
 :root {
-    --font-heading: 'Oxygen', system-ui, -apple-system, 'Segoe UI', sans-serif;
-    --font-body: 'Roboto Condensed', system-ui, -apple-system, 'Segoe UI', sans-serif;
+    --font-heading: 'Tomorrow', system-ui, -apple-system, 'Segoe UI', sans-serif;
+    --font-body: 'Zalando Sans', system-ui, -apple-system, 'Segoe UI', sans-serif;
 
     --bg: #060611;
     --panel: rgba(255,255,255,0.05);
@@ -16,10 +14,6 @@
     --border-cyan: rgba(0,240,255,0.22);
     --border-magenta: rgba(255,43,214,0.20);
     --border-lime: rgba(57,255,20,0.18);
-
-    --shadow-cyan: 0 0 18px rgba(0,240,255,0.22);
-    --shadow-magenta: 0 0 18px rgba(255,43,214,0.18);
-    --shadow-lime: 0 0 18px rgba(57,255,20,0.16);
 }
 
 * {
